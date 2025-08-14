@@ -24,7 +24,7 @@ import {
   Send,
 } from "lucide-react";
 import { FaWhatsapp, FaDocker } from "react-icons/fa";
-import { SiClerk, SiStripe } from "react-icons/si";
+import { SiClerk, SiStripe, SiRazorpay } from "react-icons/si";
 import heroimg from "../assets/heroimg.jpg";
 import indieshows from "../assets/indieshows.png";
 import bgremover from "../assets/bgremover.png";
@@ -1015,10 +1015,15 @@ const Portfolio = () => {
                     alt="MongoDB"
                   />
                   <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                     className="w-6 h-6"
-                    alt="Redux"
+                    alt="Express"
                   />
+
+                  <div className="flex flex-wrap gap-2 items-center">
+                    <SiRazorpay className="w-5 h-5 text-blue-600" />
+                    <SiClerk className="w-5 h-5 text-blue-600" />
+                  </div>
                 </div>
               </div>
             </Card>
@@ -1084,10 +1089,13 @@ const Portfolio = () => {
                     alt="MongoDB"
                   />
                   <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                     className="w-6 h-6"
-                    alt="Redux"
+                    alt="Express"
                   />
+                  <div className="flex flex-wrap gap-2 items-center">
+                    <SiClerk className="w-5 h-5 text-blue-600" />
+                  </div>
                 </div>
               </div>
             </Card>
@@ -1220,9 +1228,9 @@ const Portfolio = () => {
                     alt="MongoDB"
                   />
                   <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                     className="w-6 h-6"
-                    alt="TypeScript"
+                    alt="Express"
                   />
                 </div>
               </div>
