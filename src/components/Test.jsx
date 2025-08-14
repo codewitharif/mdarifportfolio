@@ -23,7 +23,13 @@ import {
   Instagram,
   Send,
 } from "lucide-react";
+import { FaWhatsapp, FaDocker } from "react-icons/fa";
+import { SiClerk, SiStripe } from "react-icons/si";
 import heroimg from "../assets/heroimg.jpg";
+import indieshows from "../assets/indieshows.png";
+import bgremover from "../assets/bgremover.png";
+import jobmarket from "../assets/jobmarket.png";
+import bizstripe from "../assets/bizstripe.png";
 import bg from "../assets/bg.png";
 import { TypeAnimation } from "react-type-animation";
 
@@ -86,7 +92,7 @@ const Portfolio = () => {
       color: "text-pink-600 hover:text-pink-800",
     },
     {
-      icon: MessageCircle,
+      icon: FaWhatsapp,
       href: "https://wa.me/917772884698?text=Hello%20Arif%2C%20I%20want%20to%20connect%20with%20you",
       color: "text-green-600 hover:text-green-800",
     },
@@ -428,7 +434,7 @@ const Portfolio = () => {
                       : "bg-gray-100 hover:bg-gray-200"
                   }`}
                 >
-                  <MessageCircle
+                  <FaWhatsapp
                     size={24}
                     className="text-green-600 hover:text-green-800"
                     href="https://wa.me/917772884698?text=Hello%20Arif%2C%20I%20want%20to%20connect%20with%20you"
@@ -443,6 +449,7 @@ const Portfolio = () => {
               <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 rounded-full overflow-hidden p-1.5 relative z-10">
                 <img
                   src={heroimg}
+                  draggable={false}
                   alt="Profile"
                   className="w-full h-full object-cover rounded-full"
                 />
@@ -535,9 +542,9 @@ const Portfolio = () => {
             icon={<Code className="text-blue-600" size={28} />}
             title="Who I Am"
             description={[
-              "A web developer passionate about software engineering.",
-              "Enjoy solving problems and building scalable applications.",
-              "Always learning new technologies to improve my skills.",
+              "A passionate full-stack developer with a strong foundation in software engineering.",
+              "Thrives on solving complex problems and delivering clean, scalable solutions.",
+              "Committed to continuous learning and staying ahead of emerging technologies.",
             ]}
             darkMode={darkMode}
           />
@@ -547,9 +554,9 @@ const Portfolio = () => {
             icon={<Target className="text-purple-600" size={28} />}
             title="What I Do"
             description={[
-              "Develop high-performance web apps using modern tech stacks.",
-              "Solve algorithmic problems and optimize code efficiency.",
-              "Contribute to open-source and follow industry trends.",
+              "Craft high-performance, responsive web applications with modern tech stacks.",
+              "Write clean, maintainable code and optimize for speed and scalability.",
+              "Explore new tools, contribute to open source, and adapt to industry trends.",
             ]}
             darkMode={darkMode}
           />
@@ -559,9 +566,9 @@ const Portfolio = () => {
             icon={<Rocket className="text-green-600" size={28} />}
             title="My Goals"
             description={[
-              "Build tech products that solve real-world challenges.",
-              "Advance as a web developer with modern frameworks.",
-              "Grow the dev community through open-source contributions.",
+              "Develop impactful tech products that address real-world problems.",
+              "Master cutting-edge frameworks and backend architectures.",
+              "Share knowledge, mentor others, and grow the developer community.",
             ]}
             darkMode={darkMode}
           />
@@ -571,9 +578,9 @@ const Portfolio = () => {
             icon={<Lightbulb className="text-orange-600" size={28} />}
             title="My Philosophy"
             description={[
-              "Technology should simplify lives, not complicate them.",
-              "Great software solves problems, not just writes code.",
-              "Continuous learning keeps you ahead in tech.",
+              "Technology should empower and simplify, not overwhelm.",
+              "Great software is measured by the problems it solves, not lines of code.",
+              "Lifelong learning is the key to staying relevant in a fast-evolving tech world.",
             ]}
             darkMode={darkMode}
           />
@@ -583,11 +590,19 @@ const Portfolio = () => {
       {/* Skills Section */}
       <section id="skills" className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8 text-center">
-            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Skills & Technologies
-            </span>
-          </h2>
+            </h2>
+            <p
+              className={`text-lg md:text-xl ${
+                darkMode ? "text-gray-300" : "text-gray-600"
+              } max-w-3xl mx-auto`}
+            >
+              Tools and technologies I use to bring ideas to life — efficiently
+              and at scale.
+            </p>
+          </div>
 
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-4">
             {/* HTML */}
@@ -817,17 +832,12 @@ const Portfolio = () => {
               </div>
               <span className="font-medium text-sm">Netlify</span>
             </Card>
-
-            {/* Excel */}
+            {/* Docker */}
             <Card className="p-4 flex flex-col items-center">
               <div className="w-12 h-12 bg-blue-600/20 rounded-full flex items-center justify-center mb-2">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019–present%29.svg"
-                  className="w-8 h-8"
-                  alt="Excel"
-                />
+                <FaDocker className="w-8 h-8 text-blue-600" alt="Docker" />
               </div>
-              <span className="font-medium text-sm">Excel</span>
+              <span className="font-medium text-sm">Docker</span>
             </Card>
 
             {/* Canva */}
@@ -867,34 +877,35 @@ const Portfolio = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* ERP Billing Software */}
+            {/* movie show ticket booking application */}
+            {/* IndieShows Movie Booking App */}
             <Card className="overflow-hidden group">
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                  alt="ERP Billing Software"
+                  src={indieshows}
+                  alt="IndieShows Movie App"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 
               {/* Title & Icons */}
               <div className="flex items-center justify-between p-4 border-b">
-                <h3 className="text-xl font-semibold">ERP Billing Software</h3>
+                <h3 className="text-xl font-semibold">IndieShows</h3>
                 <div className="flex items-center gap-3">
                   <a
-                    href="https://github.com/codewitharif/erpapp"
+                    href="https://github.com/codewitharif/movieticketbookingapp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Github className="w-5 h-5 stroke-[2.5] text-gray-950 dark:text-gray-500 hover:text-blue-500 transition" />
+                    <Github className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-blue-500 transition" />
                   </a>
                   <a
-                    href="https://bizstripe.vercel.app/"
+                    href="https://movieticketbookingapp.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <ExternalLink className="w-5 h-5 stroke-[2.5] text-gray-950 dark:text-gray-500 hover:text-green-500 transition" />
+                    <ExternalLink className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-green-500 transition" />
                   </a>
                 </div>
               </div>
@@ -906,11 +917,13 @@ const Portfolio = () => {
                     darkMode ? "text-gray-300" : "text-gray-800"
                   } mb-4`}
                 >
-                  All-in-one ERP billing software streamlining sales, purchases,
-                  inventory management, and financial operations.
+                  Full-featured movie booking platform with seat reservation,
+                  Stripe payments, instant confirmation emails, and admin tools
+                  for managing movies and shows.
                 </p>
 
-                <div className="flex flex-wrap gap-3">
+                {/* Small tech stack icons */}
+                <div className="flex flex-wrap gap-2">
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                     className="w-6 h-6"
@@ -931,6 +944,81 @@ const Portfolio = () => {
                     className="w-6 h-6"
                     alt="Express"
                   />
+
+                  <div className="flex flex-wrap gap-2 items-center">
+                    <SiStripe className="w-5 h-5 text-purple-600" />
+                    <SiClerk className="w-5 h-5 text-blue-600" />
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* bg remover saasapp */}
+            <Card className="overflow-hidden group">
+              {/* Image */}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={bgremover}
+                  alt="Bg Remover SAAS"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+
+              {/* Title & Icons */}
+              <div className="flex items-center justify-between p-4 border-b">
+                <h3 className="text-xl font-semibold">BG Remover SAAS</h3>
+                <div className="flex items-center gap-3">
+                  <a
+                    href="https://github.com/codewitharif/bgremoversaasapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-blue-500 transition" />
+                  </a>
+                  <a
+                    href="https://bgremoversaasapp.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-green-500 transition" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Description & Tech Stack */}
+              <div className="p-4">
+                <p
+                  className={`${
+                    darkMode ? "text-gray-300" : "text-gray-800"
+                  } mb-4`}
+                >
+                  Background Remover SaaS application, featuring secure payment
+                  integration, subscription-based pricing plans, and
+                  lightning-fast image processing.
+                </p>
+
+                {/* Small tech stack icons */}
+                <div className="flex flex-wrap gap-2">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    className="w-6 h-6"
+                    alt="React"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    className="w-6 h-6"
+                    alt="Node.js"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                    className="w-6 h-6"
+                    alt="MongoDB"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                    className="w-6 h-6"
+                    alt="Redux"
+                  />
                 </div>
               </div>
             </Card>
@@ -940,7 +1028,7 @@ const Portfolio = () => {
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+                  src={jobmarket}
                   alt="JobMarket Portal"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -1003,36 +1091,34 @@ const Portfolio = () => {
                 </div>
               </div>
             </Card>
-
-            {/* bg remover saasapp */}
+            {/* ERP Billing Software */}
             <Card className="overflow-hidden group">
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
-"
-                  alt="Bg Remover SAAS"
+                  src={bizstripe}
+                  alt="ERP Billing Software"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 
               {/* Title & Icons */}
               <div className="flex items-center justify-between p-4 border-b">
-                <h3 className="text-xl font-semibold">BG Remover SAAS</h3>
+                <h3 className="text-xl font-semibold">ERP Billing Software</h3>
                 <div className="flex items-center gap-3">
                   <a
-                    href="https://github.com/codewitharif/bgremoversaasapp"
+                    href="https://github.com/codewitharif/erpapp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Github className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-blue-500 transition" />
+                    <Github className="w-5 h-5 stroke-[2.5] text-gray-950 dark:text-gray-500 hover:text-blue-500 transition" />
                   </a>
                   <a
-                    href="https://bgremoversaasapp.vercel.app"
+                    href="https://bizstripe.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <ExternalLink className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-green-500 transition" />
+                    <ExternalLink className="w-5 h-5 stroke-[2.5] text-gray-950 dark:text-gray-500 hover:text-green-500 transition" />
                   </a>
                 </div>
               </div>
@@ -1044,13 +1130,11 @@ const Portfolio = () => {
                     darkMode ? "text-gray-300" : "text-gray-800"
                   } mb-4`}
                 >
-                  Background Remover SaaS application, featuring secure payment
-                  integration, subscription-based pricing plans, and
-                  lightning-fast image processing.
+                  All-in-one ERP billing software streamlining sales, purchases,
+                  inventory management, and financial operations.
                 </p>
 
-                {/* Small tech stack icons */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-3">
                   <img
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                     className="w-6 h-6"
@@ -1067,9 +1151,9 @@ const Portfolio = () => {
                     alt="MongoDB"
                   />
                   <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                     className="w-6 h-6"
-                    alt="Redux"
+                    alt="Express"
                   />
                 </div>
               </div>
