@@ -26,11 +26,13 @@ import {
 import { FaWhatsapp, FaDocker } from "react-icons/fa";
 import { SiClerk, SiStripe, SiRazorpay } from "react-icons/si";
 import heroimg from "../assets/heroimg.jpg";
+import myimg from "../assets/myimg.jpeg"
 import indieshows from "../assets/indieshows.png";
 import bgremover from "../assets/bgremover.png";
 import jobmarket from "../assets/jobmarket.png";
 import bizstripe from "../assets/bizstripe.png";
 import bg from "../assets/bg.png";
+import blogapp from "../assets/blogapp.png";
 import { TypeAnimation } from "react-type-animation";
 
 const Portfolio = () => {
@@ -342,7 +344,7 @@ const Portfolio = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <User className="text-blue-400" size={20} />
-                  <span>Bokaro, Jharkhand</span>
+                  <span>Bokaro, Jharkhand, India</span>
                 </div>
               </div>
 
@@ -448,7 +450,7 @@ const Portfolio = () => {
               {/* Main Image with Gradient Border */}
               <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 rounded-full overflow-hidden p-1.5 relative z-10">
                 <img
-                  src={heroimg}
+                  src={myimg}
                   draggable={false}
                   alt="Profile"
                   className="w-full h-full object-cover rounded-full"
@@ -665,18 +667,6 @@ const Portfolio = () => {
               <span className="font-medium text-sm">Tailwind</span>
             </Card>
 
-            {/* MySQL */}
-            <Card className="p-4 flex flex-col items-center">
-              <div className="w-12 h-12 bg-blue-600/20 rounded-full flex items-center justify-center mb-2">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                  className="w-8 h-8"
-                  alt="MySQL"
-                />
-              </div>
-              <span className="font-medium text-sm">MySQL</span>
-            </Card>
-
             {/* React */}
             <Card className="p-4 flex flex-col items-center">
               <div className="w-12 h-12 bg-blue-600/20 rounded-full flex items-center justify-center mb-2">
@@ -699,6 +689,18 @@ const Portfolio = () => {
                 />
               </div>
               <span className="font-medium text-sm">Redux</span>
+            </Card>
+
+            {/* Next.js */}
+            <Card className="p-4 flex flex-col items-center">
+              <div className="w-12 h-12 bg-gray-800/20 rounded-full flex items-center justify-center mb-2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                  className="w-8 h-8"
+                  alt="Next.js"
+                />
+              </div>
+              <span className="font-medium text-sm">Next.js</span>
             </Card>
 
             {/* Node.js */}
@@ -725,6 +727,30 @@ const Portfolio = () => {
               <span className="font-medium text-sm">MongoDB</span>
             </Card>
 
+            {/* MySQL */}
+            <Card className="p-4 flex flex-col items-center">
+              <div className="w-12 h-12 bg-blue-600/20 rounded-full flex items-center justify-center mb-2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  className="w-8 h-8"
+                  alt="MySQL"
+                />
+              </div>
+              <span className="font-medium text-sm">MySQL</span>
+            </Card>
+
+            {/* SQL Server */}
+            <Card className="p-4 flex flex-col items-center">
+              <div className="w-12 h-12 bg-red-600/20 rounded-full flex items-center justify-center mb-2">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftsqlserver.svg"
+                  className="w-8 h-8"
+                  alt="SQL Server"
+                />
+              </div>
+              <span className="font-medium text-sm">SQL Server</span>
+            </Card>
+
             {/* Firebase */}
             <Card className="p-4 flex flex-col items-center">
               <div className="w-12 h-12 bg-blue-600/20 rounded-full flex items-center justify-center mb-2">
@@ -737,16 +763,16 @@ const Portfolio = () => {
               <span className="font-medium text-sm">Firebase</span>
             </Card>
 
-            {/* Java */}
+            {/* TypeScript */}
             <Card className="p-4 flex flex-col items-center">
               <div className="w-12 h-12 bg-blue-600/20 rounded-full flex items-center justify-center mb-2">
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                   className="w-8 h-8"
-                  alt="Java"
+                  alt="TypeScript"
                 />
               </div>
-              <span className="font-medium text-sm">Java</span>
+              <span className="font-medium text-sm">TypeScript</span>
             </Card>
 
             {/* Python */}
@@ -759,18 +785,6 @@ const Portfolio = () => {
                 />
               </div>
               <span className="font-medium text-sm">Python</span>
-            </Card>
-
-            {/* AWS */}
-            <Card className="p-4 flex flex-col items-center">
-              <div className="w-12 h-12 bg-blue-600/20 rounded-full flex items-center justify-center mb-2">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                  className="w-8 h-8"
-                  alt="AWS"
-                />
-              </div>
-              <span className="font-medium text-sm">AWS</span>
             </Card>
 
             {/* VS Code */}
@@ -839,6 +853,17 @@ const Portfolio = () => {
               </div>
               <span className="font-medium text-sm">Docker</span>
             </Card>
+            {/* Postman */}
+            <Card className="p-4 flex flex-col items-center">
+              <div className="w-12 h-12 bg-orange-600/20 rounded-full flex items-center justify-center mb-2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                  className="w-8 h-8"
+                  alt="Postman"
+                />
+              </div>
+              <span className="font-medium text-sm">Postman</span>
+            </Card>
 
             {/* Canva */}
             <Card className="p-4 flex flex-col items-center">
@@ -877,7 +902,82 @@ const Portfolio = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* movie show ticket booking application */}
+            {/* Blog App */}
+            <Card className="overflow-hidden group">
+              {/* Image */}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={blogapp}
+                  alt="Blog App"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+
+              {/* Title & Icons */}
+              <div className="flex items-center justify-between p-4 border-b">
+                <h3 className="text-xl font-semibold">
+                  Social Blogging Platform
+                </h3>
+                <div className="flex items-center gap-3">
+                  <a
+                    href="https://github.com/codewitharif/blogapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-blue-500 transition" />
+                  </a>
+                  <a
+                    href="https://blogappclientx.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-green-500 transition" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Description & Tech Stack */}
+              <div className="p-4">
+                <p
+                  className={`${
+                    darkMode ? "text-gray-300" : "text-gray-800"
+                  } mb-4`}
+                >
+                  Full-featured blogging platform with user accounts, blog
+                  creation, likes, comments, shares, category filters, and
+                  community engagement.
+                </p>
+
+                {/* Small tech stack icons */}
+                <div className="flex flex-wrap gap-2">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    className="w-6 h-6"
+                    alt="React"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    className="w-6 h-6"
+                    alt="Node.js"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                    className="w-6 h-6"
+                    alt="MongoDB"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    className="w-6 h-6"
+                    alt="Express"
+                  />
+
+                  <div className="flex flex-wrap gap-2 items-center">
+                    <SiClerk className="w-5 h-5 text-blue-600" />
+                  </div>
+                </div>
+              </div>
+            </Card>
+
             {/* IndieShows Movie Booking App */}
             <Card className="overflow-hidden group">
               {/* Image */}
@@ -891,7 +991,9 @@ const Portfolio = () => {
 
               {/* Title & Icons */}
               <div className="flex items-center justify-between p-4 border-b">
-                <h3 className="text-xl font-semibold">IndieShows</h3>
+                <h3 className="text-xl font-semibold">
+                  Movie Show Booking App
+                </h3>
                 <div className="flex items-center gap-3">
                   <a
                     href="https://github.com/codewitharif/movieticketbookingapp"
