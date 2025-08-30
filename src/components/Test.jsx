@@ -26,7 +26,7 @@ import {
 import { FaWhatsapp, FaDocker } from "react-icons/fa";
 import { SiClerk, SiStripe, SiRazorpay } from "react-icons/si";
 import heroimg from "../assets/heroimg.jpg";
-import myimg from "../assets/myimg.jpeg"
+import myimg from "../assets/myimg.jpeg";
 import indieshows from "../assets/indieshows.png";
 import bgremover from "../assets/bgremover.png";
 import jobmarket from "../assets/jobmarket.png";
@@ -751,6 +751,18 @@ const Portfolio = () => {
               <span className="font-medium text-sm">SQL Server</span>
             </Card>
 
+            {/* SQLite */}
+            <Card className="p-4 flex flex-col items-center">
+              <div className="w-12 h-12 bg-blue-600/20 rounded-full flex items-center justify-center mb-2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+                  className="w-8 h-8"
+                  alt="SQLite"
+                />
+              </div>
+              <span className="font-medium text-sm">SQLite</span>
+            </Card>
+
             {/* Firebase */}
             <Card className="p-4 flex flex-col items-center">
               <div className="w-12 h-12 bg-blue-600/20 rounded-full flex items-center justify-center mb-2">
@@ -1143,7 +1155,7 @@ const Portfolio = () => {
 
               {/* Title & Icons */}
               <div className="flex items-center justify-between p-4 border-b">
-                <h3 className="text-xl font-semibold">JobMarket Portal</h3>
+                <h3 className="text-xl font-semibold">Job Portal Platform</h3>
                 <div className="flex items-center gap-3">
                   <a
                     href="https://github.com/codewitharif/jobportalapp/"
