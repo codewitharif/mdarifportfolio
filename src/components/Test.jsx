@@ -31,6 +31,7 @@ import indieshows from "../assets/indieshows.png";
 import bgremover from "../assets/bgremover.png";
 import jobmarket from "../assets/jobmarket.png";
 import bizstripe from "../assets/bizstripe.png";
+import urbankart from "../assets/urbankart.png";
 import bg from "../assets/bg.png";
 import blogapp from "../assets/blogapp.png";
 import { TypeAnimation } from "react-type-animation";
@@ -914,13 +915,19 @@ const Portfolio = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Blog App */}
-            <Card className="overflow-hidden group">
+            {/* ecommerce App */}
+
+            <Card className="overflow-hidden group ">
+              {/* Tag */}
+              <span className="absolute top-1/4 right-1 -translate-y-1/2 bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md z-10">
+                In Development
+              </span>
+
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src={blogapp}
-                  alt="Blog App"
+                  src={urbankart}
+                  alt="UrbanKart Ecommerce App"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
@@ -928,18 +935,18 @@ const Portfolio = () => {
               {/* Title & Icons */}
               <div className="flex items-center justify-between p-4 border-b">
                 <h3 className="text-xl font-semibold">
-                  Social Blogging Platform
+                  UrbanKart Ecommerce App
                 </h3>
                 <div className="flex items-center gap-3">
                   <a
-                    href="https://github.com/codewitharif/blogapp"
+                    href="https://github.com/codewitharif/ecommerceapp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Github className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-blue-500 transition" />
                   </a>
                   <a
-                    href="https://blogappclientx.vercel.app/"
+                    href="https://urbankartx.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -955,9 +962,9 @@ const Portfolio = () => {
                     darkMode ? "text-gray-300" : "text-gray-800"
                   } mb-4`}
                 >
-                  Full-featured blogging platform with user accounts, blog
-                  creation, likes, comments, shares, category filters, and
-                  community engagement.
+                  Full-featured ecommerce platform with product management,
+                  secure payments, order tracking, and admin tools for managing
+                  categories and products.
                 </p>
 
                 {/* Small tech stack icons */}
@@ -984,12 +991,12 @@ const Portfolio = () => {
                   />
 
                   <div className="flex flex-wrap gap-2 items-center">
-                    <SiClerk className="w-5 h-5 text-blue-600" />
+                    <SiStripe className="w-5 h-5 text-purple-600" />
+                    {/* <SiClerk className="w-5 h-5 text-blue-600" /> */}
                   </div>
                 </div>
               </div>
             </Card>
-
             {/* IndieShows Movie Booking App */}
             <Card className="overflow-hidden group">
               {/* Image */}
@@ -1061,6 +1068,82 @@ const Portfolio = () => {
 
                   <div className="flex flex-wrap gap-2 items-center">
                     <SiStripe className="w-5 h-5 text-purple-600" />
+                    <SiClerk className="w-5 h-5 text-blue-600" />
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Blog App */}
+            <Card className="overflow-hidden group">
+              {/* Image */}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={blogapp}
+                  alt="Blog App"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+
+              {/* Title & Icons */}
+              <div className="flex items-center justify-between p-4 border-b">
+                <h3 className="text-xl font-semibold">
+                  Social Blogging Platform
+                </h3>
+                <div className="flex items-center gap-3">
+                  <a
+                    href="https://github.com/codewitharif/blogapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-blue-500 transition" />
+                  </a>
+                  <a
+                    href="https://blogappclientx.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-green-500 transition" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Description & Tech Stack */}
+              <div className="p-4">
+                <p
+                  className={`${
+                    darkMode ? "text-gray-300" : "text-gray-800"
+                  } mb-4`}
+                >
+                  Full-featured blogging platform with user accounts, blog
+                  creation, likes, comments, shares, category filters, and
+                  community engagement.
+                </p>
+
+                {/* Small tech stack icons */}
+                <div className="flex flex-wrap gap-2">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    className="w-6 h-6"
+                    alt="React"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    className="w-6 h-6"
+                    alt="Node.js"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                    className="w-6 h-6"
+                    alt="MongoDB"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    className="w-6 h-6"
+                    alt="Express"
+                  />
+
+                  <div className="flex flex-wrap gap-2 items-center">
                     <SiClerk className="w-5 h-5 text-blue-600" />
                   </div>
                 </div>

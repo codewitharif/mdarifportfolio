@@ -8,14 +8,17 @@ const App = () => {
 
   return (
     <div>
-      {loading ? (
+      {/* {loading ? (
         <IntroLoader onComplete={() => setLoading(false)} />
       ) : (
         <>
           <CustomCursor />
           <Test />
         </>
-      )}
+      )} */}
+
+      <CustomCursor />
+      <Test />
     </div>
   );
 };
