@@ -1439,9 +1439,7 @@ const Portfolio = () => {
       {/* Experience Section */}
       <section
         id="experience"
-        className={`py-20 px-6 ${
-          darkMode ? "bg-gray-800 text-gray-100" : "bg-white text-gray-900"
-        }`}
+        className={`py-20 px-6 `}
       >
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
