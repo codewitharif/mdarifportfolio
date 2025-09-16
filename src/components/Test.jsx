@@ -40,6 +40,11 @@ const Portfolio = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -106,6 +111,32 @@ const Portfolio = () => {
     },
   ];
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(formData);
+
+    const res = await fetch(
+      "https://portfolioserver-pi.vercel.app/api/contact",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      }
+    );
+
+    const data = await res.json();
+    if (data.success) {
+      alert("✅ Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" }); // reset form
+    } else {
+      alert("❌ Failed to send message!");
+    }
+  };
   const NavLink = ({ href, children, mobile = false }) => (
     <button
       onClick={() => scrollToSection(href)}
@@ -1437,10 +1468,7 @@ const Portfolio = () => {
       </section>
 
       {/* Experience Section */}
-      <section
-        id="experience"
-        className={`py-20 px-6 `}
-      >
+      <section id="experience" className={`py-20 px-6 `}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -1510,6 +1538,7 @@ const Portfolio = () => {
                       management features for LMS platforms.
                     </li>
                   </ul>
+
                   <div className="flex flex-wrap gap-2 mt-4">
                     {[
                       "React.js",
@@ -1521,7 +1550,12 @@ const Portfolio = () => {
                     ].map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 rounded-full"
+                        className={`px-3 py-1 text-sm rounded-full
+        ${
+          darkMode
+            ? "bg-blue-900/50 text-blue-200"
+            : "bg-blue-100 text-blue-600"
+        }`}
                       >
                         {tech}
                       </span>
@@ -1585,7 +1619,12 @@ const Portfolio = () => {
                       (tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 rounded-full"
+                          className={`px-3 py-1 text-sm rounded-full
+        ${
+          darkMode
+            ? "bg-blue-900/50 text-blue-200"
+            : "bg-blue-100 text-blue-600"
+        }`}
                         >
                           {tech}
                         </span>
@@ -1637,7 +1676,12 @@ const Portfolio = () => {
                       (tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 rounded-full"
+                          className={`px-3 py-1 text-sm rounded-full
+        ${
+          darkMode
+            ? "bg-blue-900/50 text-blue-200"
+            : "bg-blue-100 text-blue-600"
+        }`}
                         >
                           {tech}
                         </span>
@@ -1941,39 +1985,67 @@ const Portfolio = () => {
               </p>
 
               <div className="space-y-6">
+                {/* Email */}
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="font-medium">mdarif1522003@gmail.com</p>
+                    <a
+                      href="mailto:mdarif1522003@gmail.com"
+                      className="font-medium text-blue-600 hover:underline"
+                    >
+                      mdarif1522003@gmail.com
+                    </a>
                   </div>
                 </div>
 
+                {/* GitHub */}
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
                     <Github className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="font-medium">github.com/mdarif15</p>
+                    <a
+                      href="https://github.com/codewitharif"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-blue-600 hover:underline"
+                    >
+                      github.com/codewitharif
+                    </a>
                   </div>
                 </div>
 
+                {/* LinkedIn */}
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
                     <Linkedin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="font-medium">linkedin.com/in/mdarif15</p>
+                    <a
+                      href="https://linkedin.com/in/mdarif1522003"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-blue-600 hover:underline"
+                    >
+                      linkedin.com/in/mdarif1522003
+                    </a>
                   </div>
                 </div>
 
+                {/* Phone */}
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="font-medium">+91 7772884698</p>
+                    <a
+                      href="tel:+917772884698"
+                      className="font-medium text-blue-600 hover:underline"
+                    >
+                      +91 7772884698
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1986,6 +2058,7 @@ const Portfolio = () => {
               } rounded-2xl p-8`}
             >
               <div className="space-y-6">
+                {/* Name */}
                 <div>
                   <label className="block text-sm font-medium mb-2">Name</label>
                   <div className="relative">
@@ -1993,8 +2066,8 @@ const Portfolio = () => {
                     <input
                       type="text"
                       name="name"
-                      value=""
-                      onChange=""
+                      value={formData.name}
+                      onChange={handleChange}
                       placeholder="Enter your name"
                       className={`w-full pl-12 pr-4 py-3 rounded-lg border ${
                         darkMode
@@ -2006,6 +2079,7 @@ const Portfolio = () => {
                   </div>
                 </div>
 
+                {/* Email */}
                 <div>
                   <label className="block text-sm font-medium mb-2">
                     Email
@@ -2015,7 +2089,8 @@ const Portfolio = () => {
                     <input
                       type="email"
                       name="email"
-                      value=""
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder="Enter your email"
                       className={`w-full pl-12 pr-4 py-3 rounded-lg border ${
                         darkMode
@@ -2027,6 +2102,7 @@ const Portfolio = () => {
                   </div>
                 </div>
 
+                {/* Message */}
                 <div>
                   <label className="block text-sm font-medium mb-2">
                     Message
@@ -2035,7 +2111,8 @@ const Portfolio = () => {
                     <MessageCircle className="absolute left-3 top-4 w-5 h-5 opacity-50" />
                     <textarea
                       name="message"
-                      value=""
+                      value={formData.message}
+                      onChange={handleChange}
                       placeholder="Enter your message"
                       rows={6}
                       className={`w-full pl-12 pr-4 py-3 rounded-lg border resize-none ${
@@ -2048,7 +2125,11 @@ const Portfolio = () => {
                   </div>
                 </div>
 
-                <button className="w-full py-3 px-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg font-medium hover:from-blue-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+                {/* Submit Button */}
+                <button
+                  onClick={handleSubmit}
+                  className="w-full py-3 px-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg font-medium hover:from-blue-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
+                >
                   <span>Send Message</span>
                   <Send className="w-5 h-5" />
                 </button>
