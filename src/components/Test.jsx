@@ -1041,7 +1041,7 @@ const Portfolio = () => {
               {/* Title & Icons */}
               <div className="flex items-center justify-between p-4 border-b">
                 <h3 className="text-xl font-semibold">
-                  Movie Show Booking App
+                  Ai Powered Chatbot App
                 </h3>
                 <div className="flex items-center gap-3">
                   <a
