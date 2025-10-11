@@ -34,6 +34,7 @@ import bizstripe from "../assets/bizstripe.png";
 import urbankart from "../assets/urbankart.png";
 import bg from "../assets/bg.png";
 import blogapp from "../assets/blogapp.png";
+import chatbot from "../assets/chatbot.png";
 import { TypeAnimation } from "react-type-animation";
 
 const Portfolio = () => {
