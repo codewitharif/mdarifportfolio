@@ -1105,6 +1105,153 @@ const Portfolio = () => {
               </div>
             </Card>
 
+                 {/* AI Powered Chatbot App */}
+            <Card className="overflow-hidden group">
+              {/* Image */}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={chatbot}
+                  alt="Ai Powered Chatbot App"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+
+              {/* Title & Icons */}
+              <div className="flex items-center justify-between p-4 border-b">
+                <h3 className="text-xl font-semibold">
+                  Movie Show Booking App
+                </h3>
+                <div className="flex items-center gap-3">
+                  <a
+                    href="https://github.com/codewitharif/chatbot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-blue-500 transition" />
+                  </a>
+                  <a
+                    href="https://arifachatbot.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-green-500 transition" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Description & Tech Stack */}
+              <div className="p-4">
+                <p
+                  className={`${
+                    darkMode ? "text-gray-300" : "text-gray-800"
+                  } mb-4`}
+                >
+               AI chatbot platform with natural language understanding, instant replies, lead capture, and powerful analytics to track user engagement.
+                </p>
+
+                {/* Small tech stack icons */}
+                <div className="flex flex-wrap gap-2">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    className="w-6 h-6"
+                    alt="React"
+                  />
+                  {/* <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    className="w-6 h-6"
+                    alt="Node.js"
+                  /> */}
+                  {/* <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                    className="w-6 h-6"
+                    alt="MongoDB"
+                  /> */}
+                  {/* <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    className="w-6 h-6"
+                    alt="Express"
+                  /> */}
+
+                  {/* <div className="flex flex-wrap gap-2 items-center">
+                    <SiStripe className="w-5 h-5 text-purple-600" />
+                    <SiClerk className="w-5 h-5 text-blue-600" />
+                  </div> */}
+                </div>
+              </div>
+            </Card>
+
+                    {/* JobMarket Portal */}
+            <Card className="overflow-hidden group">
+              {/* Image */}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={jobmarket}
+                  alt="JobMarket Portal"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+
+              {/* Title & Icons */}
+              <div className="flex items-center justify-between p-4 border-b">
+                <h3 className="text-xl font-semibold">Job Portal Platform</h3>
+                <div className="flex items-center gap-3">
+                  <a
+                    href="https://github.com/codewitharif/jobportalapp/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-blue-500 transition" />
+                  </a>
+                  <a
+                    href="https://jobportalappclient.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-green-500 transition" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Description & Tech Stack */}
+              <div className="p-4">
+                <p
+                  className={`${
+                    darkMode ? "text-gray-300" : "text-gray-800"
+                  } mb-4`}
+                >
+                  Full-featured MERN stack job portal for recruiters and job
+                  seekers with advanced filtering.
+                </p>
+
+                {/* Small tech stack icons */}
+                <div className="flex flex-wrap gap-2">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    className="w-6 h-6"
+                    alt="React"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    className="w-6 h-6"
+                    alt="Node.js"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                    className="w-6 h-6"
+                    alt="MongoDB"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    className="w-6 h-6"
+                    alt="Express"
+                  />
+                  <div className="flex flex-wrap gap-2 items-center">
+                    <SiClerk className="w-5 h-5 text-blue-600" />
+                  </div>
+                </div>
+              </div>
+            </Card>
+
             {/* Blog App */}
             <Card className="overflow-hidden group">
               {/* Image */}
@@ -1181,6 +1328,7 @@ const Portfolio = () => {
               </div>
             </Card>
 
+
             {/* bg remover saasapp */}
             <Card className="overflow-hidden group">
               {/* Image */}
@@ -1256,77 +1404,7 @@ const Portfolio = () => {
               </div>
             </Card>
 
-            {/* JobMarket Portal */}
-            <Card className="overflow-hidden group">
-              {/* Image */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={jobmarket}
-                  alt="JobMarket Portal"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-
-              {/* Title & Icons */}
-              <div className="flex items-center justify-between p-4 border-b">
-                <h3 className="text-xl font-semibold">Job Portal Platform</h3>
-                <div className="flex items-center gap-3">
-                  <a
-                    href="https://github.com/codewitharif/jobportalapp/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-blue-500 transition" />
-                  </a>
-                  <a
-                    href="https://jobportalappclient.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ExternalLink className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-green-500 transition" />
-                  </a>
-                </div>
-              </div>
-
-              {/* Description & Tech Stack */}
-              <div className="p-4">
-                <p
-                  className={`${
-                    darkMode ? "text-gray-300" : "text-gray-800"
-                  } mb-4`}
-                >
-                  Full-featured MERN stack job portal for recruiters and job
-                  seekers with advanced filtering.
-                </p>
-
-                {/* Small tech stack icons */}
-                <div className="flex flex-wrap gap-2">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                    className="w-6 h-6"
-                    alt="React"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                    className="w-6 h-6"
-                    alt="Node.js"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                    className="w-6 h-6"
-                    alt="MongoDB"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                    className="w-6 h-6"
-                    alt="Express"
-                  />
-                  <div className="flex flex-wrap gap-2 items-center">
-                    <SiClerk className="w-5 h-5 text-blue-600" />
-                  </div>
-                </div>
-              </div>
-            </Card>
+    
             {/* ERP Billing Software */}
             <Card className="overflow-hidden group">
               {/* Image */}
