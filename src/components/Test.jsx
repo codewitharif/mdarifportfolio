@@ -35,7 +35,7 @@ import urbankart from "../assets/urbankart.png";
 import bg from "../assets/bg.png";
 import blogapp from "../assets/blogapp.png";
 import chatbot from "../assets/chatbot.png";
-import mariaai from "../assets/mariaai.png";
+import mahiraai from "../assets/mahiraai.png";
 import { TypeAnimation } from "react-type-animation";
 
 const Portfolio = () => {
@@ -948,9 +948,6 @@ const Portfolio = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-         
-
-     
             {/* IndieShows Movie Booking App */}
             <Card className="overflow-hidden group">
               {/* Image */}
@@ -1028,7 +1025,7 @@ const Portfolio = () => {
               </div>
             </Card>
 
-                 {/* AI Powered Chatbot App */}
+            {/* AI Powered Chatbot App */}
             <Card className="overflow-hidden group">
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
@@ -1069,7 +1066,9 @@ const Portfolio = () => {
                     darkMode ? "text-gray-300" : "text-gray-800"
                   } mb-4`}
                 >
-               AI chatbot platform with natural language understanding, instant replies, lead capture, and powerful analytics to track user engagement.
+                  AI chatbot platform with natural language understanding,
+                  instant replies, lead capture, and powerful analytics to track
+                  user engagement.
                 </p>
 
                 {/* Small tech stack icons */}
@@ -1103,17 +1102,17 @@ const Portfolio = () => {
               </div>
             </Card>
 
-                 {/* Maria App */}
+            {/* Maria App */}
             <Card className="overflow-hidden group">
-                    {/* Tag */}
+              {/* Tag */}
               <span className="absolute top-1/4 right-1 -translate-y-1/2 bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md z-10">
                 Coming Soon
               </span>
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src={mariaai}
-                  alt="Ai Powered Chatbot App"
+                  src={mahiraai}
+                  alt="Ai Powered Image Editing App"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
@@ -1121,23 +1120,23 @@ const Portfolio = () => {
               {/* Title & Icons */}
               <div className="flex items-center justify-between p-4 border-b">
                 <h3 className="text-xl font-semibold">
-                  Maria Ai All In One App
+                  Mahira Ai All In One App
                 </h3>
                 <div className="flex items-center gap-3">
-                  {/* <a
-                    href="https://github.com/codewitharif/chatbot"
+                  <a
+                    href="https://github.com/codewitharif/mahira.ai"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Github className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-blue-500 transition" />
-                  </a> */}
-                  {/* <a
-                    href="https://arifachatbot.vercel.app"
+                  </a>
+                  <a
+                    href="https://mahiraai.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <ExternalLink className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-green-500 transition" />
-                  </a> */}
+                  </a>
                 </div>
               </div>
 
@@ -1148,7 +1147,11 @@ const Portfolio = () => {
                     darkMode ? "text-gray-300" : "text-gray-800"
                   } mb-4`}
                 >
-               Maria AI, rapidly generate articles, develop innovative ideas, and optimize their workflow with intuitive AI tools, making content creation seamless and efficient.
+                  {/* Maria AI, rapidly generate articles, develop innovative ideas,
+                  and optimize their workflow with intuitive AI tools, making
+                  content creation seamless and efficient. */}
+                  Remove backgrounds, enhance quality, and transform images
+                  instantly with AI-powered precision. No skills required.
                 </p>
 
                 {/* Small tech stack icons */}
@@ -1182,7 +1185,7 @@ const Portfolio = () => {
               </div>
             </Card>
 
-                    {/* JobMarket Portal */}
+            {/* JobMarket Portal */}
             <Card className="overflow-hidden group">
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
@@ -1330,7 +1333,6 @@ const Portfolio = () => {
               </div>
             </Card>
 
-
             {/* bg remover saasapp */}
             <Card className="overflow-hidden group">
               {/* Image */}
@@ -1405,7 +1407,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </Card>
-   {/* ecommerce App */}
+            {/* ecommerce App */}
             <Card className="overflow-hidden group ">
               {/* Tag */}
               <span className="absolute top-1/4 right-1 -translate-y-1/2 bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md z-10">
@@ -1487,7 +1489,6 @@ const Portfolio = () => {
               </div>
             </Card>
 
-    
             {/* ERP Billing Software */}
             <Card className="overflow-hidden group">
               {/* Image */}
