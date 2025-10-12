@@ -1151,7 +1151,7 @@ const Portfolio = () => {
                   and optimize their workflow with intuitive AI tools, making
                   content creation seamless and efficient. */}
                   Remove backgrounds, enhance quality, and transform images
-                  instantly with AI-powered precision. No skills required.
+                  instantly with AI-powered precision. 
                 </p>
 
                 {/* Small tech stack icons */}
