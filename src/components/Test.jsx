@@ -1678,7 +1678,7 @@ const Portfolio = () => {
                     BIZNWEB TECHNOLOGIES
                   </p>
                   <p className="text-gray-500 dark:text-gray-400 mb-4">
-                    October 2024 – Present
+                    October 2024 – February, 2025
                   </p>
                   <ul className="list-disc list-inside space-y-2">
                     <li>
