@@ -948,6 +948,90 @@ const Portfolio = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Mahira App */}
+            <Card className="overflow-hidden group">
+              {/* Tag */}
+              {/* <span className="absolute top-1/4 right-1 -translate-y-1/2 bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md z-10">
+                Coming Soon
+              </span> */}
+              {/* Image */}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={mahiraai}
+                  alt="Ai Powered Image Editing App"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+
+              {/* Title & Icons */}
+              <div className="flex items-center justify-between p-4 border-b">
+                <h3 className="text-xl font-semibold">
+                  Mahira Ai: The Magical Photo Editor
+                </h3>
+                <div className="flex items-center gap-3">
+                  <a
+                    href="https://github.com/codewitharif/mahira.ai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-blue-500 transition" />
+                  </a>
+                  <a
+                    href="https://mahiraai.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-green-500 transition" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Description & Tech Stack */}
+              <div className="p-4">
+                <p
+                  className={`${
+                    darkMode ? "text-gray-300" : "text-gray-800"
+                  } mb-4`}
+                >
+                  {/* Maria AI, rapidly generate articles, develop innovative ideas,
+                  and optimize their workflow with intuitive AI tools, making
+                  content creation seamless and efficient. */}
+                  Remove or change backgrounds, crop, flip, rotate, add text &
+                  stickers, and apply stunning filters — all in one smart photo
+                  editor.
+                </p>
+
+                {/* Small tech stack icons */}
+                <div className="flex flex-wrap gap-2">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    className="w-6 h-6"
+                    alt="React"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    className="w-6 h-6"
+                    alt="Node.js"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                    className="w-6 h-6"
+                    alt="MongoDB"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    className="w-6 h-6"
+                    alt="Express"
+                  />
+
+                  <div className="flex flex-wrap gap-2 items-center">
+                    <SiStripe className="w-5 h-5 text-purple-600" />
+                    <SiClerk className="w-5 h-5 text-blue-600" />
+                  </div>
+                </div>
+              </div>
+            </Card>
+
             {/* IndieShows Movie Booking App */}
             <Card className="overflow-hidden group">
               {/* Image */}
@@ -1098,89 +1182,6 @@ const Portfolio = () => {
                     <SiStripe className="w-5 h-5 text-purple-600" />
                     <SiClerk className="w-5 h-5 text-blue-600" />
                   </div> */}
-                </div>
-              </div>
-            </Card>
-
-            {/* Maria App */}
-            <Card className="overflow-hidden group">
-              {/* Tag */}
-              <span className="absolute top-1/4 right-1 -translate-y-1/2 bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md z-10">
-                Coming Soon
-              </span>
-              {/* Image */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={mahiraai}
-                  alt="Ai Powered Image Editing App"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-
-              {/* Title & Icons */}
-              <div className="flex items-center justify-between p-4 border-b">
-                <h3 className="text-xl font-semibold">
-                  Mahira Ai All In One App
-                </h3>
-                <div className="flex items-center gap-3">
-                  <a
-                    href="https://github.com/codewitharif/mahira.ai"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-blue-500 transition" />
-                  </a>
-                  <a
-                    href="https://mahiraai.vercel.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ExternalLink className="w-5 h-5 text-gray-700 dark:text-gray-500 hover:text-green-500 transition" />
-                  </a>
-                </div>
-              </div>
-
-              {/* Description & Tech Stack */}
-              <div className="p-4">
-                <p
-                  className={`${
-                    darkMode ? "text-gray-300" : "text-gray-800"
-                  } mb-4`}
-                >
-                  {/* Maria AI, rapidly generate articles, develop innovative ideas,
-                  and optimize their workflow with intuitive AI tools, making
-                  content creation seamless and efficient. */}
-                  Remove backgrounds, enhance quality, and transform images
-                  instantly with AI-powered precision. 
-                </p>
-
-                {/* Small tech stack icons */}
-                <div className="flex flex-wrap gap-2">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                    className="w-6 h-6"
-                    alt="React"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                    className="w-6 h-6"
-                    alt="Node.js"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                    className="w-6 h-6"
-                    alt="MongoDB"
-                  />
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                    className="w-6 h-6"
-                    alt="Express"
-                  />
-
-                  <div className="flex flex-wrap gap-2 items-center">
-                    <SiStripe className="w-5 h-5 text-purple-600" />
-                    <SiClerk className="w-5 h-5 text-blue-600" />
-                  </div>
                 </div>
               </div>
             </Card>
